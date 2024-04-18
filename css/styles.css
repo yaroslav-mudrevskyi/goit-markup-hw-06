@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Poppins", "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -16,17 +16,17 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
-}
-
-.header-logo-accent {
   color: #4d5ae5;
 }
 
-.menu-links a {
+.header-logo-accent {
+  color: #2e2f42;
+}
+
+.menu-link-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -34,12 +34,12 @@ ul {
   color: #2e2f42;
 }
 
-.menu-links a:hover,
-.menu-links a:focus {
-  color: #4d5ae5;
+.menu-link-item:hover,
+.menu-link-item:focus {
+  color: #404bbf;
 }
 
-.contacts a {
+.contacts .contacts-item {
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
@@ -48,26 +48,33 @@ ul {
   color: #434455;
 }
 
-.contacts a:hover,
-.contacts a:focus {
-  color: #4d5ae5;
+.contacts-item:hover,
+.contacts-item:focus {
+  color: #404bbf;
 }
 
 .hero-title {
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 }
 
 .hero-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  background: #4d5ae5;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #404bbf;
 }
 
 .hero {
@@ -90,9 +97,10 @@ ul {
 
 .team-title {
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
   color: #2e2f42;
 }
 
@@ -112,15 +120,20 @@ ul {
   text-align: center;
 }
 
+.team-column {
+  background: #fff;
+}
+
 .team {
   background: #f4f4fd;
 }
 
 .portfolio-title {
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
   color: #2e2f42;
 }
 
@@ -142,14 +155,14 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: #4d5ae5;
 }
 
 .footer-logo-accent {
-  color: #4d5ae5;
+  color: #f4f4fd;
 }
 
 .footer-text {
