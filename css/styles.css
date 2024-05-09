@@ -29,6 +29,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -120,15 +121,43 @@ address {
   color: #404bbf;
 }
 
+.hero {
+  background: #2e2f42;
+  height: 600px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  padding: 188px 0;
+  justify-content: space-between;
+}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  width: 496px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 31px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -144,8 +173,29 @@ address {
   background: #404bbf;
 }
 
-.hero {
-  background: #2e2f42;
+.feature .container {
+  max-width: 1158px;
+  margin: 120px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.feature-title {
+  display: none;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .feature-column-title {
@@ -163,12 +213,45 @@ address {
 }
 
 .team-title {
+  margin-bottom: 72px;
+  padding-top: 120px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   color: #2e2f42;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 0;
+  margin-bottom: 120px;
+  padding-bottom: 120px;
+}
+
+.team-column {
+  display: flex;
+  flex-basis: calc((100% - 24px * 3) / 4);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 0;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .team-column-title {
@@ -187,15 +270,20 @@ address {
   text-align: center;
 }
 
-.team-column {
-  background: #fff;
-}
-
 .team {
   background: #f4f4fd;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
 .portfolio-title {
+  margin-top: 0;
+  margin-bottom: 71px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
