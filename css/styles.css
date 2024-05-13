@@ -57,7 +57,6 @@ header {
   justify-content: flex-start;
   flex-direction: row;
   gap: 0px;
-  /*margin-right: 332px;*/
 }
 
 .header-logo {
@@ -274,13 +273,6 @@ address {
   background: #f4f4fd;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding-bottom: 120px;
-}
-
 .portfolio-title {
   margin-top: 0;
   margin-bottom: 71px;
@@ -290,6 +282,28 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 .column-title {
@@ -314,6 +328,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -325,8 +341,10 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
 }
 
 .page-footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
