@@ -139,7 +139,6 @@ address {
   text-align: center;
   color: #fff;
   width: 496px;
-  height: 120px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -218,7 +217,6 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  /*text-transform: capitalize;*/
   color: #2e2f42;
 }
 
@@ -287,6 +285,7 @@ address {
 .row {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc((100% - 24px * 2) / 3);
   row-gap: 48px;
   column-gap: 24px;
   padding-bottom: 120px;
@@ -303,7 +302,6 @@ address {
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
   width: 360px;
-  height: 120px;
 }
 
 .column-title {
