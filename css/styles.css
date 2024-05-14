@@ -46,9 +46,9 @@ header {
 
 .page-header .container {
   display: flex;
+  justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 24px;
-  justify-content: space-between;
 }
 
 .menu {
@@ -64,8 +64,6 @@ header {
   justify-content: flex-start;
   gap: 0px;
   margin-right: 76px;
-  width: 115px;
-  height: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -128,8 +126,8 @@ address {
 .hero .container {
   display: flex;
   flex-direction: column;
-  padding: 188px 0;
   justify-content: space-between;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -148,10 +146,9 @@ address {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
-  margin: 0 auto;
-  padding: 16px 32px;
   min-width: 169px;
-  min-height: 56px;
+  padding: 16px 32px;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -207,9 +204,9 @@ address {
 }
 
 .team-title {
+  padding-top: 120px;
   margin-top: 0;
   margin-bottom: 72px;
-  padding-top: 120px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -220,21 +217,21 @@ address {
 .team-list {
   display: flex;
   gap: 24px;
+  padding-bottom: 120px;
   margin-top: 0;
   margin-bottom: 120px;
-  padding-bottom: 120px;
 }
 
 .team-column {
   display: flex;
-  flex-basis: calc((100% - 24px * 3) / 4);
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 32px;
+  flex-basis: calc((100% - 24px * 3) / 4);
+  padding: 0px 0px 32px 0px;
   margin-top: 0;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
@@ -294,11 +291,10 @@ address {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  padding: 32px 16px;
-  width: 360px;
 }
 
 .portfolio-column-title {
@@ -321,8 +317,6 @@ address {
   justify-content: flex-start;
   gap: 0px;
   margin-bottom: 16px;
-  width: 115px;
-  height: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -337,8 +331,8 @@ address {
 }
 
 .footer-text {
-  margin-top: 0;
   width: 264px;
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
