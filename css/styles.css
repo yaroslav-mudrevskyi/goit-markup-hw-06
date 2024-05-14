@@ -47,7 +47,11 @@ header {
 .page-header .container {
   display: flex;
   justify-content: space-between;
-  padding: 24px 15px;
+  width: 1158px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .menu {
@@ -101,13 +105,12 @@ address {
   font-style: normal;
 }
 
-.contacts ul {
+.header-contacts {
   display: flex;
   gap: 40px;
 }
 
-.contacts .contacts-item-email,
-.contacts .contacts-item-phone {
+.header-contacts-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -115,10 +118,8 @@ address {
   color: #434455;
 }
 
-.contacts-item-email:hover,
-.contacts-item-email:focus,
-.contacts-item-phone:hover,
-.contacts-item-phone:focus {
+.header-contacts-item:hover,
+.header-contacts-item:focus {
   color: #404bbf;
 }
 
@@ -175,10 +176,16 @@ address {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .feature-list {
