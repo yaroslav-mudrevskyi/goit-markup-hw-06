@@ -47,8 +47,7 @@ header {
 .page-header .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 15px;
 }
 
 .menu {
@@ -85,6 +84,7 @@ header {
 }
 
 .menu-link-item {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -106,7 +106,8 @@ address {
   gap: 40px;
 }
 
-.contacts .contacts-item {
+.contacts .contacts-item-email,
+.contacts .contacts-item-phone {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -114,8 +115,10 @@ address {
   color: #434455;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-item-email:hover,
+.contacts-item-email:focus,
+.contacts-item-phone:hover,
+.contacts-item-phone:focus {
   color: #404bbf;
 }
 
@@ -123,15 +126,12 @@ address {
   background: #2e2f42;
 }
 
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.hero {
   padding: 188px 0;
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
   font-size: 56px;
@@ -142,11 +142,9 @@ address {
 }
 
 .hero-btn {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
+  display: block;
   min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
@@ -167,12 +165,20 @@ address {
   background: #404bbf;
 }
 
-.feature .container {
-  margin: 120px auto;
+.feature {
+  padding: 120px 0;
 }
 
-.feature-title {
-  display: none;
+.feature .container {
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .feature-list {
@@ -185,11 +191,11 @@ address {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 8px;
   flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .feature-column-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -198,13 +204,18 @@ address {
 }
 
 .feature-column-text {
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
+.team {
+  padding: 120px 0;
+}
+
 .team-title {
-  padding-top: 120px;
+  /*padding-top: 120px;*/
   margin-top: 0;
   margin-bottom: 72px;
   font-size: 36px;
@@ -217,9 +228,9 @@ address {
 .team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
+  /*padding-bottom: 120px;*/
   margin-top: 0;
-  margin-bottom: 120px;
+  /*margin-bottom: 120px;*/
 }
 
 .team-column {
@@ -227,9 +238,8 @@ address {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
   flex-basis: calc((100% - 24px * 3) / 4);
-  padding: 0px 0px 32px 0px;
+  /*padding: 0px 0px 32px 0px;*/
   margin-top: 0;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -242,7 +252,8 @@ address {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
+  /*gap: 8px;*/
+  padding: 32px 0;
 }
 
 .team-column-title {
@@ -252,9 +263,11 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-column-text {
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -265,9 +278,13 @@ address {
   background: #f4f4fd;
 }
 
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-title {
   margin-top: 0;
-  margin-bottom: 71px;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -282,7 +299,7 @@ address {
   flex-basis: calc((100% - 24px * 2) / 3);
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
+  /*padding-bottom: 120px;*/
 }
 
 .portfolio-card-content {
@@ -290,7 +307,7 @@ address {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
+  /*gap: 8px;*/
   padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -303,19 +320,21 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-column-text {
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 .footer-logo {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  /*align-items: center;
   justify-content: flex-start;
-  gap: 0px;
+  gap: 0px;*/
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -331,7 +350,7 @@ address {
 }
 
 .footer-text {
-  width: 264px;
+  max-width: 264px;
   margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
