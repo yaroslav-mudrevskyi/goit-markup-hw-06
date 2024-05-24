@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- #region Header -->
     <header class="page-header">
       <div class="container">
         <nav class="menu">
@@ -27,7 +28,11 @@
             >Web<span class="header-logo-accent">Studio</span></a
           >
           <ul class="menu-link">
-            <li><a class="menu-link-item" href="./index.html">Studio</a></li>
+            <li>
+              <a class="menu-link-item menu-link-studio" href="./index.html"
+                >Studio</a
+              >
+            </li>
             <li><a class="menu-link-item" href="">Portfolio</a></li>
             <li><a class="menu-link-item" href="">Contacts</a></li>
           </ul>
@@ -48,19 +53,30 @@
         </address>
       </div>
     </header>
+    <!-- #endregion /Header -->
+
     <main>
+      <!-- #region Hero -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
+      <!-- #endregion Hero -->
+
+      <!-- #region Features -->
       <section class="feature">
         <div class="container">
           <!--Hidden title h2-->
           <h2 class="visually-hidden">#</h2>
           <ul class="feature-list">
             <li class="feature-column">
+              <div class="feature-icon">
+                <svg>
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="feature-column-title">Strategy</h3>
               <p class="feature-column-text">
                 Our goal is to identify the business problem to walk away with
@@ -68,6 +84,11 @@
               </p>
             </li>
             <li class="feature-column">
+              <div class="feature-icon">
+                <svg>
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="feature-column-title">Punctuality</h3>
               <p class="feature-column-text">
                 Bring the key message to the brand's audience for the best price
@@ -75,6 +96,11 @@
               </p>
             </li>
             <li class="feature-column">
+              <div class="feature-icon">
+                <svg>
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="feature-column-title">Diligence</h3>
               <p class="feature-column-text">
                 Research and confirm brands that present the strongest digital
@@ -82,6 +108,11 @@
               </p>
             </li>
             <li class="feature-column">
+              <div class="feature-icon">
+                <svg>
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="feature-column-title">Technologies</h3>
               <p class="feature-column-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -91,6 +122,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion /Features -->
+
+      <!-- #region Team -->
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -106,6 +140,54 @@
               <div class="team-column-content">
                 <h3 class="team-column-title">Mark Guerrero</h3>
                 <p class="team-column-text">Product Designer</p>
+                <ul class="team-social-list">
+                  <li>
+                    <a
+                      class="team-social-link"
+                      href="https://instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Link Instagram"
+                    >
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="team-social-link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Link Twitter"
+                    >
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="team-social-link"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Link Facebook"
+                    >
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-column">
@@ -119,6 +201,36 @@
               <div class="team-column-content">
                 <h3 class="team-column-title">Tom Ford</h3>
                 <p class="team-column-text">Frontend Developer</p>
+                <ul class="team-social-list">
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-column">
@@ -132,6 +244,36 @@
               <div class="team-column-content">
                 <h3 class="team-column-title">Camila Garcia</h3>
                 <p class="team-column-text">Marketing</p>
+                <ul class="team-social-list">
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-column">
@@ -145,11 +287,44 @@
               <div class="team-column-content">
                 <h3 class="team-column-title">Daniel Wilson</h3>
                 <p class="team-column-text">UI Designer</p>
+                <ul class="team-social-list">
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-social-link" href="#">
+                      <svg class="card-social-links" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- #endregion /Team -->
+
+      <!-- #region Portfolio -->
       <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -229,7 +404,10 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion /Portfolio -->
     </main>
+
+    <!-- #region Footer -->
     <footer class="page-footer">
       <div class="container">
         <a class="footer-logo" href="./index.html"
@@ -241,5 +419,6 @@
         </p>
       </div>
     </footer>
+    <!-- #endregion /Footer -->
   </body>
 </html>
