@@ -569,11 +569,15 @@ address {
 }
 
 .footer-subscribe-input {
-  padding: 8px 16px;
+  padding-left: 16px;
   border: 1px solid #fff;
   border-radius: 4px;
   min-width: 264px;
   height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -588,16 +592,14 @@ address {
 }
 
 .footer-subscribe-btn {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
-  border: transparent;
+  border: none;
   border-radius: 4px;
-  padding: 8px 64px 8px 24px;
-  width: 165px;
+  padding: 8px 24px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -615,13 +617,7 @@ address {
 }
 
 .footer-subscribe-icon {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
-  z-index: 3;
-  width: 24px;
-  height: 24px;
+  margin-left: 16px;
   fill: #fff;
 }
 
@@ -644,7 +640,8 @@ address {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(46, 47, 66, 0.4);
 }
 
@@ -659,7 +656,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 408px;
+  width: 408px;
   min-height: 584px;
   flex-shrink: 0;
   overflow-y: auto;
@@ -668,10 +665,14 @@ address {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
   background-color: #fcfcfc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 24px;
   right: 24px;
   padding: 0;
@@ -680,18 +681,20 @@ address {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal-close-icon {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
   fill: #2e2f42;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: #404bbf;
 }
 
 .modal-close-btn:hover > .modal-close-icon,
@@ -719,7 +722,7 @@ address {
   margin-bottom: 4px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   color: #8e8f99;
 }
@@ -733,7 +736,7 @@ address {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
   padding: 11px 11px 11px 38px;
   color: #2e2f42;
   background-color: transparent;
@@ -766,12 +769,16 @@ address {
   width: 100%;
   min-height: 120px;
   padding: 8px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  outline: none;
+  outline: transparent;
   resize: none;
-  color: #2e2f42;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -791,6 +798,21 @@ address {
   margin-bottom: 24px;
 }
 
+.checkbox:checked + .checkbox-user .checkbox-user-span {
+  fill: #f4f4fd;
+  border: transparent;
+  background-color: #404bbf;
+}
+
+.checkbox-user {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  color: #8e8f99;
+}
+
 .checkbox-user-span {
   display: inline-flex;
   justify-content: center;
@@ -801,21 +823,9 @@ address {
   height: 16px;
   margin-right: 8px;
   fill: transparent;
-}
-
-.checkbox:checked + .checkbox-user .checkbox-user-span {
-  fill: #f4f4fd;
-  border: transparent;
-  background-color: #404bbf;
-}
-
-.checkbox-user {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
-  cursor: pointer;
-  color: #8e8f99;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-user-link {
