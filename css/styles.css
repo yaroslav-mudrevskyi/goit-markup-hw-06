@@ -74,7 +74,15 @@ input {
 .features,
 .team,
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .features,
+  .team,
+  .portfolio {
+    padding: 120px 0;
+  }
 }
 
 .visually-hidden {
@@ -279,23 +287,90 @@ input {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero/heroimage_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  padding: 188px 0;
+  padding: 72px 0;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/heroimage_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/heroimage_tab@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/heroimage_tab@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/heroimage_desk@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/heroimage_desk@2x.jpg);
+  }
 }
 
 .hero-title {
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto;
-  margin-bottom: 48px;
-  font-size: 56px;
-  line-height: 1.07;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 
 .hero-btn {
@@ -711,7 +786,7 @@ input {
 
 /* #endregion  */
 
-/* #region Modal */
+/* #region Modal Overlay*/
 
 .backdrop {
   position: fixed;
@@ -955,7 +1030,7 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  height: 640px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -972,6 +1047,7 @@ input {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+  /* transform: translateX(100%); */
 }
 
 .header-menu-btn {
