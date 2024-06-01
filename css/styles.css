@@ -28,6 +28,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -35,22 +36,33 @@ button {
   font-family: inherit;
 }
 
+input {
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
 /* #endregion /Base */
 
 /* #region Componants */
+
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.features,
+.team,
+.portfolio {
+  padding: 120px 0;
 }
 /* #endregion /Componants */
 
 /* #region Header */
 
 .page-header {
-  padding: 24px 0;
+  /* padding: 24px 0; */
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
@@ -58,24 +70,19 @@ button {
 
 .page-header .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 1158px;
-  margin: 0 auto;
   padding: 0 15px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0px;
+  justify-content: space-between;
 }
 
 .header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0px;
+  display: inline-flex;
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -90,11 +97,15 @@ button {
   color: #2e2f42;
 }
 
-.menu-link {
+.menu-links {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
+}
+
+.menu-link {
+  padding: 24px 0;
 }
 
 .menu-link-item {
@@ -214,14 +225,6 @@ address {
 
 /* #region Features */
 
-.feature {
-  padding: 120px 0;
-}
-
-.feature .container {
-  margin: 0 auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -281,10 +284,6 @@ address {
 /* #endregion /Features */
 
 /* #region Team */
-
-.team {
-  padding: 120px 0;
-}
 
 .team-title {
   margin-top: 0;
@@ -389,10 +388,6 @@ address {
 /* #endregion /Team */
 
 /* #region Portfolio */
-
-.portfolio {
-  padding: 120px 0;
-}
 
 .portfolio-title {
   margin-top: 0;
