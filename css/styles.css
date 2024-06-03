@@ -1237,6 +1237,12 @@ input {
   background-color: #fff;
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-menu.is-open {
   transform: translateX(0);
 }
