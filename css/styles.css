@@ -1019,7 +1019,6 @@ input {
 
 @media only screen and (min-width: 768px) {
   .modal {
-    width: 408px;
     padding: 72px 24px 24px;
   }
 }
@@ -1175,6 +1174,8 @@ input {
 
 .checkbox-user-span {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   min-width: 16px;
